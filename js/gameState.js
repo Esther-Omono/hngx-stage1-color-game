@@ -1,41 +1,41 @@
 export class gameState {
-    constructor() {
-        this.score = 0;
-        this.colors = [];
-        this.targetColor = '';
-    }
+  constructor() {
+    this.score = 0;
+    this.colors = [];
+    this.targetColor = '';
+  }
 
-    incrementScore() {
-        this.score++;
-        return this.score;
-    }
+  incrementScore() {
+    this.score++;
+    return this.score;
+  }
 
-    resetScore() {
-        this.score = 0;
-        return this.score;
-    }
+  resetScore() {
+    this.score = 0;
+    return this.score;
+  }
 
-    setColors(colors) {
-        this.colors = colors;
-    }
+  setColors(colors) {
+    this.colors = colors;
+  }
 
-    setTargetColor(color) {
-        this.targetColor = color;
-    }
+  setTargetColor(color) {
+    this.targetColor = color;
+  }
 
-    isCorrectGuess(color) {
-        return color === this.targetColor;
-    }
+  isCorrectGuess(color) {
+    return color === this.targetColor;
+  }
 
-    getScore() {
-        return this.score;
-    }
+  getScore() {
+    return this.score;
+  }
 
-    getColors() {
-        return this.colors;
-    }
+  getColors() {
+    return this.colors;
+  }
 
-    getTargetColor() {
-        return this.targetColor;
-    }
+  getTargetColor() {
+    return this.targetColor;
+  }
 }
